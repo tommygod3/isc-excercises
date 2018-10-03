@@ -3,16 +3,16 @@ print("---------- Exercise 8 script ----------")
 print("Question 1:")
 def double_it(number):
     return number * 2
-print(double_it(2))
-print(double_it(2.0))
-print(double_it("two"))
+print(f"double_it(2): {double_it(2)}")
+print(f"double_it(2.0): {double_it(2.0)}")
+print(f"double_it(two): {double_it('two')}")
 
 print("Question 2:")
 import math
 def calc_hypo(a, b):
     hypo = math.sqrt((a * a) + (b * b))
     return hypo
-print(calc_hypo(3,4))
+print(f"calc_hypo(3,4): {calc_hypo(3,4)}")
 
 print("Question 3:")
 def calc_hypo(a, b):
@@ -27,10 +27,11 @@ def calc_hypo(a, b):
         return False
     hypo = math.sqrt((a * a) + (b * b))
     return hypo
-print(calc_hypo("a",2))
-print(calc_hypo(2,"b"))
-print(calc_hypo("a","b"))
-print(calc_hypo(-1,2))
-print(calc_hypo(2,-1))
-print(calc_hypo(-1,-1))
-print(calc_hypo(2,2))
+
+print(f"calc_hypo('a',2): {calc_hypo('a',2)}")
+print(f"calc_hypo(2,'b'): {calc_hypo(2,'b')}")
+print(f"calc_hypo('a','b'): {calc_hypo('a','b')}")
+print(f"calc_hypo(-1,2): {calc_hypo(-1,2)}")
+print(f"calc_hypo(2,-1): {calc_hypo(2,-1)}")
+print(f"calc_hypo(-1,-1): {calc_hypo(-1,-1)}")
+print(f"calc_hypo(2,2): {calc_hypo(2,2)}")

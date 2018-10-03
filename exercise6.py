@@ -7,9 +7,9 @@ for letter in s:
 print(f"\n5th element: {s[4]}")
 print(f"Last element: {s[-1]}")
 print(f"Length: {len(s)}")
-print(s[0])
-print(s[0][0])
-print(s[0][0][0])
+print(f"s[0]: {s[0]}")
+print(f"s[0][0]: {s[0][0]}")
+print(f"s[0][0][0]: {s[0][0][0]}")
 # s[0] is first element
 # s[0][0] is s[0]'s first element
 # and so on
@@ -23,10 +23,10 @@ for word in split_s:
 
 print("Question 3:")
 something = "Completely Different"
-print(dir(something))
-print(something.count("t"))
-print(something.find("plete"))
-print(something.split("e"))
+print(f"dir(something):\n{dir(something)}")
+print(f"t's in something: {something.count('t')}")
+print(f"Position of 'plete': {something.find('plete')}")
+print(f"Split across e: {something.split('e')}")
 thing2 = something.replace("Different", "Silly")
 print(thing2)
 try:
