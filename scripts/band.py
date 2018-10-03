@@ -28,7 +28,7 @@ class Band(object):
 
         self.wages[member] = wage
 
-    def writeAnnualReport(self):
+    def write_annual_report(self):
         "Displays annual report for band."
         print("Band name: %s\n" % self.name)
         print("%20s | %s" % ("Band member", "Weekly Wage"))
@@ -37,3 +37,12 @@ class Band(object):
 
         for member in members:
             print("%20s | %.2f " % (member, self.wages[member]))
+
+    def get_members(self):
+        return list(self.wages.keys())
+
+    def sack(self, member):
+        del self.wages[member]
+
+    def promote(self, member, payrise):
+        self.wages[member] += payrise
