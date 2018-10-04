@@ -2,11 +2,6 @@ print("---------- Exercise 3 script ----------")
 
 print("Question 1:")
 from netCDF4 import Dataset
-import numpy as np
-import time as mytime
-from numpy.random import uniform
-from datetime import datetime, timedelta
-from netCDF4 import num2date, date2num
 
 dataset = Dataset("data/ggas2014121200_00-18.nc", "r", format="NETCDF4_CLASSIC")
 print("Dataset variables:")
