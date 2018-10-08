@@ -7,6 +7,11 @@ import numpy as np
 dataset = Dataset("data/ggas2014121200_00-18.nc", "r", format="NETCDF4_CLASSIC")
 sst = dataset.variables["SSTK"]
 arr = sst[1, 0, 10:20, 30:35]
+vars = dataset.variables
+arr_time = vars["time"][1]
+arr_level = vars["surface"][0]
+arr_lats = vars["latitude"][10:20]
+arr_lons = vars["longitude"][30:35]
 metadata = {}
 for attr in sst.ncattrs():
     metadata[attr] = getattr(sst, attr)
@@ -32,10 +37,10 @@ for (key, value) in metadata.items():
     
 myvar.source = "super dataset"
 
-times[:] = [0]
-levels[:] = [0]
-latitudes[:] = range(10)
-longitudes[:] = range(5)
+times[:] = arr_time
+levels[:] = arr_level
+latitudes[:] = arr_lats
+longitudes[:] = arr_lons
 
 myvar[:] = arr
 
