@@ -8,11 +8,12 @@ print(f"First: {tup[0]}, last: {tup[-1]}")
 
 print("Question 2:")
 mylist = [23, "hi", 2.4e-10]
+print("count item")
 for (count, item) in enumerate(mylist):
     print(count, item)
 
 print("Question 3:")
 (first, middle, last) = mylist
-print(first,middle,last)
+print(f"first,middle,last:\n{first,middle,last}")
 (first, middle, last) = (middle, last, first)
-print(first,middle,last)
+print(f"first,middle,last:\n{first,middle,last}")

@@ -12,7 +12,7 @@ y = list(range(1,11))
 y[0] = 10
 y.append(11)
 y.extend([12,13,14])
-print(y)
+print(f"y: {y}")
 
 print("Question 3:")
 forward = []

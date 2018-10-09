@@ -3,9 +3,11 @@ print("---------- Exercise 5 script ----------")
 print("Question 1:")
 with open("data/weather.csv", "r") as reader:
     data = reader.read()
+print("reader.read():")
 print(data)
 
 print("Question 2:")
+print("reader.readline():")
 with open("data/weather.csv", "r") as reader:
     line = reader.readline()
     while line:

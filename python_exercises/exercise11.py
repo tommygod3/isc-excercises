@@ -12,7 +12,7 @@ ws.write_annual_report()
 print("Question 3:")
 hs = Band("Hearsay")
 members = ["Suzanne", "Danny", "Kym", "Myleene", "Noel"]
-print(members)
+print(f"members: {members}")
 for member in members:
     hs.employ(member, 10)
 hs.write_annual_report()

@@ -23,9 +23,9 @@ print("Question 3:")
 if {}: print("hi") # Will not print
 d = {"maggie": "uk", "ronnie": "usa"}
 print(f"dir(d):\n{dir(d)}")
-print(d.items())
-print(d.keys())
-print(d.values())
+print(f"d.items(): {d.items()}")
+print(f"d.keys(): {d.keys()}")
+print(f"d.values(): {d.values()}")
 print(f"maggie: {d.get('maggie','Not found!')}") # If key not found, will print 'Not found!'
 print(f"mikhail: {d.get('mikhail','Not found!')}")
 print(f"mikhail: {d.setdefault('mikhail','ussr')}") # If mikhail not found, will add to dict with value ussr
