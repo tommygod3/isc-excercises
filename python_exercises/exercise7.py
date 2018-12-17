@@ -1,7 +1,7 @@
 print("---------- Exercise 7 script ----------")
 
 print("Question 1:")
-a = [0, 1, 2]
+a = list(range(3))
 b = a
 print(f"a: {a}, b: {b}")
 b[0] = "hello"
