@@ -9,10 +9,12 @@ print(data)
 print("Question 2:")
 print("reader.readline():")
 with open("data/weather.csv", "r") as reader:
-    line = reader.readline()
-    while line:
-        print(line)
+    while True:
         line = reader.readline()
+        if not line:
+            break
+        print(line)
+
 print("It's over")
 
 print("Question 3:")
