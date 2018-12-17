@@ -6,10 +6,9 @@ rating = 10
 print(f"Course: {course}, rating: {rating}")
 
 print("Question 2:")
-import math
 b = 3
 c = 4
-a = math.sqrt((b*b) + (c*c))
+a = ((b*b) + (c*c))**0.5
 print(f"a = {a}")
 
 print("Question 3:")
