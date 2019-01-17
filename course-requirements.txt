@@ -1,0 +1,8 @@
+Conda packages:
+conda install numpy -y
+conda install matplotlib -y
+conda install netcdf4 -y
+conda install pyshp -y
+conda install -c conda-forge iris -y
+conda install -c conda-forge basemap -y
+conda install pyserial -y
